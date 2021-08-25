@@ -19,7 +19,7 @@ function doGraphQL() {
   users(where:{id: "`+myAddr.toLowerCase()+`"})
   {
     id
-    visorsOwned{
+    visorsOwned(where: {hypervisorCount_gte:1}){
       id
       hypervisorCount
       hypervisorShares{
