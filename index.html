@@ -1,11 +1,12 @@
 <html>  
 <body>
-  Hey there.<br><br>
+Check the status of your visor.finance hypervisors<br>
+Enter your ETH address below<br><br>
   
-  <input type="text" id="address" oninput="doGraphQL();"> 
+  <input type="text" id="addr" oninput="self.location.href='#'+document.getElementById('addr').value;doGraphQL();"> 
   
-  <p id="msg"></p>
+  <pre id="msg"></pre>
   
-      <script src="visorguru.js"></script>  
+      <script src="visorguru.js">doGraphQL();</script>  
 </body>
 </html>
